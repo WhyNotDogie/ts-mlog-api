@@ -1,7 +1,11 @@
 {
     "$schema": "https://raw.githubusercontent.com/WhyNotDogie/tstmlog/master/tsconfig-schema.json",
     "compilerOptions": {
-        "types": ["ts-mlog-types"]
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "moduleResolution": "Node",
+        "types": ["ts-mlog-types"],
+        "strict": true,
     },
     "tstmlog": {
         "isWorld": true,
