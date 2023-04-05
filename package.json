@@ -11,5 +11,8 @@
     "url": "git"
   },
   "author": "WhyNotDogie",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "ts-mlog-types": "^0.1.0"
+  }
 }
