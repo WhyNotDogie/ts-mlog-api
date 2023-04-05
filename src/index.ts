@@ -57,14 +57,31 @@ const unitTypes = {
     corvus:"@corvus"
 }
 
+const unitStates = {
+    nonexisitent:0,
+    alive:1,
+    dead:2
+}
+
+class position {
+    x:number;
+    y:number;
+    constructor(x:number, y:number) {
+        this.x = x;
+        this.y = y;
+    }
+}
+
 class Unit {
     type:keyof typeof unitTypes;
+    state:0|1|2 = 0;
+    position:position|null = null;
     /**
      * Spawn this unit.
      * @worldOnly
      */
-    public spawn() {
-        
+    public spawn(x:number, y:number) {
+        mlog.raw(`spawn ${this.type} ${x} ${y} 90 @sharded result`)
     }
     constructor(type:keyof typeof unitTypes) {
         this.type = type;
