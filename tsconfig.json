@@ -1,6 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/WhyNotDogie/tstmlog/master/tsconfig-schema.json",
     "tstmlog": {
-        "isWorld": true
+        "isWorld": true,
+        "entryPoint": "src/index.ts",
+        "mlogTarget": "v8",
     }
 }
